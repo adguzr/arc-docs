@@ -1,0 +1,11 @@
+site_name: UBC ARC Technical User Documentation
+site_url: https://adguzr.github.io/arc-docs/
+
+theme:
+  name: material
+  palette:
+    primary: blue
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
