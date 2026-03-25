@@ -1,11 +1,66 @@
 site_name: UBC ARC Technical User Documentation
 site_url: https://adguzr.github.io/arc-docs/
+repo_url: https://github.com/adguzr/arc-docs
+repo_name: adguzr/arc-docs
+edit_uri: edit/main/docs/
 
 theme:
   name: material
   palette:
-    primary: blue
+    primary: custom
   features:
     - navigation.tabs
     - navigation.top
     - search.highlight
+    - content.action.edit
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:arc.support@ubc.ca
+      name: Contact ARC support
+
+copyright: >
+  &copy; 2025 UBC Advanced Research Computing &nbsp;|&nbsp;
+  <a href="mailto:arc.support@ubc.ca">arc.support@ubc.ca</a>
+
+markdown_extensions:
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Getting started:
+    - Overview: getting-started/overview.md
+    - ARC Access: getting-started/arc-access.md
+    - Connecting: getting-started/connecting.md
+  - Compute:
+    - Sockeye: compute/sockeye.md
+    - ARC OnDemand: compute/arc-ondemand.md
+    - Running jobs:
+      - Slurm basics: compute/running-jobs/slurm-basics.md
+      - Job scripts: compute/running-jobs/job-scripts.md
+      - Job arrays: compute/running-jobs/job-arrays.md
+      - Monitoring jobs: compute/running-jobs/monitoring.md
+  - Storage:
+    - Chinook: storage/chinook.md
+    - Globus: storage/globus.md
+    - Data transfer: storage/data-transfer.md
+  - Software:
+    - Available software: software/available-software.md
+    - Loading modules: software/modules.md
+    - Apptainer: software/apptainer.md
+    - Python & conda: software/python-conda.md
+  - Dev tools:
+    - VS Code: tools/vscode.md
+    - Jupyter: tools/jupyter.md
+  - REDCap:
+    - Overview: redcap/overview.md
+    - Getting access: redcap/getting-access.md
+    - Using REDCap: redcap/using-redcap.md
+  - Help:
+    - FAQ: help/faq.md
+    - Calendar: help/calendar.md
+    - Contact: help/contact.md
