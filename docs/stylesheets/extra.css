@@ -35,17 +35,13 @@
   padding: 20px 22px;
   transition: background-color 0.2s ease, transform 0.15s ease;
   position: relative;
-  cursor: pointer;
 }
 
-/* full card clickable */
-.md-typeset .grid.cards > ul > li a:first-of-type::after,
-.md-typeset .grid.cards > ol > li a:first-of-type::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  border-radius: 10px;
+/* hover highlight — no pointer, no full click */
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  background-color: #d0e3f5;
+  transform: translateY(-2px);
 }
 
 /* light mode text */
@@ -56,40 +52,30 @@
   color: #002145;
 }
 
+/* light mode links */
 .md-typeset .grid.cards > ul > li a,
 .md-typeset .grid.cards > ol > li a {
   color: #0055b3;
   font-weight: 500;
+  display: block;
+  margin: 4px 0;
 }
 
-/* hover — all cards turn dark blue */
-.md-typeset .grid.cards > ul > li:hover,
-.md-typeset .grid.cards > ol > li:hover {
-  background-color: #002145 !important;
-  transform: translateY(-2px);
-}
-
-.md-typeset .grid.cards > ul > li:hover p,
-.md-typeset .grid.cards > ol > li:hover p,
-.md-typeset .grid.cards > ul > li:hover strong,
-.md-typeset .grid.cards > ol > li:hover strong {
-  color: #ffffff !important;
-}
-
-.md-typeset .grid.cards > ul > li:hover a,
-.md-typeset .grid.cards > ol > li:hover a {
-  color: #ffffff !important;
-}
-
-.md-typeset .grid.cards > ul > li:hover hr,
-.md-typeset .grid.cards > ol > li:hover hr {
-  border-color: rgba(255,255,255,0.2);
+.md-typeset .grid.cards > ul > li a:hover,
+.md-typeset .grid.cards > ol > li a:hover {
+  color: #002145;
+  text-decoration: underline;
 }
 
 /* dark mode cards */
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li {
   background-color: #1e2d3d;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li:hover {
+  background-color: #243545;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li p,
@@ -104,9 +90,10 @@
   color: #7eb8f7;
 }
 
-[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover,
-[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li:hover {
-  background-color: #0055b3 !important;
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li a:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li a:hover {
+  color: #b3d4ff;
+  text-decoration: underline;
 }
 
 /* dark mode all links */

@@ -1,4 +1,4 @@
-site_name: UBC ARC Technical User Documentation
+site_name: UBC ARC Technical Documentation
 site_url: https://adguzr.github.io/arc-docs/
 repo_url: https://github.com/adguzr/arc-docs
 repo_name: adguzr/arc-docs
@@ -36,7 +36,7 @@ extra:
       name: Contact ARC support
 
 copyright: >
-  &copy; 2026 UBC Advanced Research Computing &nbsp;|&nbsp;
+  &copy; 2025 UBC Advanced Research Computing &nbsp;|&nbsp;
   <a href="mailto:arc.support@ubc.ca">arc.support@ubc.ca</a>
 
 markdown_extensions:
@@ -45,71 +45,62 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - tags
 
 nav:
   - Home: index.md
-  - Getting started:
-    - What is research computing?: getting-started/what-is-research-computing.md
-    - ARC systems at a glance: getting-started/systems-at-a-glance.md
-    - Request access (ARC Access): getting-started/arc-access.md
-    - Connecting via SSH: getting-started/connecting-ssh.md
-    - Connecting via ARC OnDemand: getting-started/connecting-ood.md
-    - Linux & command line basics: getting-started/linux-basics.md
-  - Systems & services:
-    - Sockeye: systems/sockeye.md
-    - ARC OnDemand: systems/arc-ondemand.md
-    - Chinook: systems/chinook.md
-    - Globus: systems/globus.md
-    - REDCap: systems/redcap.md
-    - ARC Access: systems/arc-access.md
-    - ARC AI Assistant: systems/arc-ai-assistant.md
-  - How-to guides:
-    - Running jobs:
-      - Slurm basics & fairshare: how-to/running-jobs/slurm-basics.md
-      - Writing job scripts: how-to/running-jobs/job-scripts.md
-      - Job arrays: how-to/running-jobs/job-arrays.md
-      - GPU jobs: how-to/running-jobs/gpu-jobs.md
-      - Using local scratch: how-to/running-jobs/local-scratch.md
-      - Monitoring & troubleshooting: how-to/running-jobs/monitoring.md
+  - About ARC: about.md
+  - Resources:
+    - Sockeye: resources/sockeye.md
+    - Chinook: resources/chinook.md
+    - ARC OnDemand: resources/arc-ondemand.md
+    - ARC Access: resources/arc-access.md
+    - Globus: resources/globus.md
+    - REDCap: resources/redcap.md
+  - Guides:
+    - High-Performance Computing:
+      - What is HPC: guides/hpc/what-is-hpc.md
+      - Cluster overview: guides/hpc/cluster-overview.md
+      - Linux & command line basics: guides/hpc/linux-basics.md
+      - Access: guides/hpc/access/index.md
+      - Running jobs: guides/hpc/running-jobs/index.md
+      - Software: guides/hpc/software/index.md
     - Storage:
-      - Storage overview: how-to/storage/storage-overview.md
-      - Managing your allocations: how-to/storage/managing-allocations.md
-      - Checking usage & quotas: how-to/storage/checking-usage.md
+      - Chinook overview: guides/storage/chinook-overview.md
+      - Chinook setup guide: guides/storage/chinook-setup.md
+      - Chinook sharing guide: guides/storage/chinook-sharing.md
+      - Chinook user guide: guides/storage/chinook-user-guide.md
+      - Checking usage & quotas: guides/storage/checking-usage.md
     - Data transfer:
-      - Choosing a transfer method: how-to/data-transfer/choosing-a-method.md
-      - Transferring with Globus: how-to/data-transfer/globus.md
-      - Transferring with SCP & SFTP: how-to/data-transfer/scp-sftp.md
-      - Sharing data: how-to/data-transfer/sharing-data.md
-    - Software & tools:
-      - Loading modules (CVMFS): how-to/software-tools/modules.md
-      - Python & conda environments: how-to/software-tools/python-conda.md
-      - Apptainer & Singularity: how-to/software-tools/apptainer.md
-      - RStudio with Apptainer: how-to/software-tools/rstudio.md
-      - Jupyter with Apptainer: how-to/software-tools/jupyter.md
-      - MATLAB: how-to/software-tools/matlab.md
-      - Conda in Apptainer: how-to/software-tools/conda-in-apptainer.md
-      - AlphaFold: how-to/software-tools/alphafold.md
-      - VS Code: how-to/software-tools/vscode.md
+      - OnDemand file manager: guides/data-transfer/ondemand-file-manager.md
+      - Choosing a transfer method: guides/data-transfer/choosing-method.md
+      - Transferring data on the cluster: guides/data-transfer/transferring-on-cluster.md
+      - Data transfer with Globus: guides/data-transfer/globus-transfer.md
+      - Enable Globus subscription groups: guides/data-transfer/globus-subscription-groups.md
+      - Sharing data: guides/data-transfer/sharing-data.md
+      - Globus OneDrive connector: guides/data-transfer/globus-onedrive.md
+      - Common Globus help topics: guides/data-transfer/globus-help.md
     - REDCap:
-      - Getting access: how-to/redcap/getting-access.md
-      - Security guidelines: how-to/redcap/security-guidelines.md
-      - Defending against fraudulent responses: how-to/redcap/fraudulent-responses.md
-      - Splitting a project: how-to/redcap/splitting-projects.md
-      - REB application language: how-to/redcap/reb-application.md
-      - MyCap mobile application: how-to/redcap/mycap.md
-      - nedCAPTCHA module: how-to/redcap/nedcaptcha.md
-  - Research guides:
-    - AI & machine learning:
-      - Overview & resources: research/ai-ml/overview.md
-      - GPU computing for AI/ML: research/ai-ml/gpu-computing.md
-      - LLM tools at ARC: research/ai-ml/llm-tools.md
-    - Bioinformatics:
-      - Overview & resources: research/bioinformatics/overview.md
-      - AlphaFold on Sockeye: research/bioinformatics/alphafold-on-sockeye.md
+      - Access management & security guidelines: guides/redcap/security-guidelines.md
+      - Defending against fraudulent responses: guides/redcap/fraudulent-responses.md
+      - Splitting a project: guides/redcap/splitting-projects.md
+      - REB application language: guides/redcap/reb-application.md
+      - MyCap mobile application: guides/redcap/mycap.md
+      - nedCAPTCHA module: guides/redcap/nedcaptcha.md
+    - Research workflows:
+      - LLM workloads on ARC: guides/research-workflows/llm-workloads.md
   - Support:
+    - Status & scheduled events: support/status.md
     - FAQ: support/faq.md
-    - Known issues & maintenance: support/known-issues.md
-    - Upcoming events: support/upcoming-events.md
+    - Known issues: support/known-issues.md
+    - Training: support/training.md
+    - Glossary: support/glossary.md
     - Grant support language: support/grant-language.md
     - Acknowledging ARC: support/acknowledging-arc.md
     - Contact: support/contact.md
