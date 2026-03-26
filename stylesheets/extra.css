@@ -3,3 +3,119 @@
   --md-primary-fg-color--light: #0055b3;
   --md-primary-fg-color--dark: #001628;
 }
+
+.md-grid {
+  max-width: 1400px;
+}
+
+/* dark mode nav links */
+[data-md-color-scheme="slate"] .md-tabs__link,
+[data-md-color-scheme="slate"] .md-nav__link {
+  color: #c8d8e8;
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link--active,
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #ffffff;
+}
+
+/* card grid 3 per row */
+.md-typeset .grid.cards > ul,
+.md-typeset .grid.cards > ol {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* card base */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border: none;
+  border-radius: 10px;
+  background-color: #E8F0F7;
+  padding: 20px 22px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  position: relative;
+}
+
+/* hover highlight — no pointer, no full click */
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  background-color: #d0e3f5;
+  transform: translateY(-2px);
+}
+
+/* light mode text */
+.md-typeset .grid.cards > ul > li p,
+.md-typeset .grid.cards > ol > li p,
+.md-typeset .grid.cards > ul > li strong,
+.md-typeset .grid.cards > ol > li strong {
+  color: #002145;
+}
+
+/* light mode links */
+.md-typeset .grid.cards > ul > li a,
+.md-typeset .grid.cards > ol > li a {
+  color: #0055b3;
+  font-weight: 500;
+  display: block;
+  margin: 4px 0;
+}
+
+.md-typeset .grid.cards > ul > li a:hover,
+.md-typeset .grid.cards > ol > li a:hover {
+  color: #002145;
+  text-decoration: underline;
+}
+
+/* dark mode cards */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li {
+  background-color: #1e2d3d;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li:hover {
+  background-color: #243545;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li p,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li p,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li strong,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li strong {
+  color: #e0eaf5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li a,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li a {
+  color: #7eb8f7;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li a:hover,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ol > li a:hover {
+  color: #b3d4ff;
+  text-decoration: underline;
+}
+
+/* dark mode all links */
+[data-md-color-scheme="slate"] a,
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #7eb8f7;
+}
+
+/* dark mode buttons */
+[data-md-color-scheme="slate"] .md-typeset .md-button {
+  color: #7eb8f7;
+  border-color: #7eb8f7;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  background-color: #0055b3;
+  border-color: #0055b3;
+  color: #ffffff;
+}
+
+/* dark mode general text */
+[data-md-color-scheme="slate"] .md-typeset p,
+[data-md-color-scheme="slate"] .md-typeset li {
+  color: #d0dce8;
+}
