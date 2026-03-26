@@ -7,60 +7,109 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
-    primary: custom
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.sections
     - search.highlight
+    - search.suggest
     - content.action.edit
 
 extra_css:
   - stylesheets/extra.css
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/solid/envelope
       link: mailto:arc.support@ubc.ca
       name: Contact ARC support
 
 copyright: >
-  &copy; 2025 UBC Advanced Research Computing &nbsp;|&nbsp;
+  &copy; 2026 UBC Advanced Research Computing &nbsp;|&nbsp;
   <a href="mailto:arc.support@ubc.ca">arc.support@ubc.ca</a>
 
 markdown_extensions:
   - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
   - Home: index.md
   - Getting started:
-    - Overview: getting-started/overview.md
-    - ARC Access: getting-started/arc-access.md
-    - Connecting: getting-started/connecting.md
-  - Compute:
-    - Sockeye: compute/sockeye.md
-    - ARC OnDemand: compute/arc-ondemand.md
+    - What is research computing?: getting-started/what-is-research-computing.md
+    - ARC systems at a glance: getting-started/systems-at-a-glance.md
+    - Request access (ARC Access): getting-started/arc-access.md
+    - Connecting via SSH: getting-started/connecting-ssh.md
+    - Connecting via ARC OnDemand: getting-started/connecting-ood.md
+    - Linux & command line basics: getting-started/linux-basics.md
+  - Systems & services:
+    - Sockeye: systems/sockeye.md
+    - ARC OnDemand: systems/arc-ondemand.md
+    - Chinook: systems/chinook.md
+    - Globus: systems/globus.md
+    - REDCap: systems/redcap.md
+    - ARC Access: systems/arc-access.md
+    - ARC AI Assistant: systems/arc-ai-assistant.md
+  - How-to guides:
     - Running jobs:
-      - Slurm basics: compute/running-jobs/slurm-basics.md
-      - Job scripts: compute/running-jobs/job-scripts.md
-      - Job arrays: compute/running-jobs/job-arrays.md
-      - Monitoring jobs: compute/running-jobs/monitoring.md
-  - Storage:
-    - Chinook: storage/chinook.md
-    - Globus: storage/globus.md
-    - Data transfer: storage/data-transfer.md
-  - Software:
-    - Available software: software/available-software.md
-    - Loading modules: software/modules.md
-    - Apptainer: software/apptainer.md
-    - Python & conda: software/python-conda.md
-  - Dev tools:
-    - VS Code: tools/vscode.md
-    - Jupyter: tools/jupyter.md
-  - REDCap:
-    - Overview: redcap/overview.md
-    - Getting access: redcap/getting-access.md
-    - Using REDCap: redcap/using-redcap.md
-  - Help:
-    - FAQ: help/faq.md
-    - Calendar: help/calendar.md
-    - Contact: help/contact.md
+      - Slurm basics & fairshare: how-to/running-jobs/slurm-basics.md
+      - Writing job scripts: how-to/running-jobs/job-scripts.md
+      - Job arrays: how-to/running-jobs/job-arrays.md
+      - GPU jobs: how-to/running-jobs/gpu-jobs.md
+      - Using local scratch: how-to/running-jobs/local-scratch.md
+      - Monitoring & troubleshooting: how-to/running-jobs/monitoring.md
+    - Storage:
+      - Storage overview: how-to/storage/storage-overview.md
+      - Managing your allocations: how-to/storage/managing-allocations.md
+      - Checking usage & quotas: how-to/storage/checking-usage.md
+    - Data transfer:
+      - Choosing a transfer method: how-to/data-transfer/choosing-a-method.md
+      - Transferring with Globus: how-to/data-transfer/globus.md
+      - Transferring with SCP & SFTP: how-to/data-transfer/scp-sftp.md
+      - Sharing data: how-to/data-transfer/sharing-data.md
+    - Software & tools:
+      - Loading modules (CVMFS): how-to/software-tools/modules.md
+      - Python & conda environments: how-to/software-tools/python-conda.md
+      - Apptainer & Singularity: how-to/software-tools/apptainer.md
+      - RStudio with Apptainer: how-to/software-tools/rstudio.md
+      - Jupyter with Apptainer: how-to/software-tools/jupyter.md
+      - MATLAB: how-to/software-tools/matlab.md
+      - Conda in Apptainer: how-to/software-tools/conda-in-apptainer.md
+      - AlphaFold: how-to/software-tools/alphafold.md
+      - VS Code: how-to/software-tools/vscode.md
+    - REDCap:
+      - Getting access: how-to/redcap/getting-access.md
+      - Security guidelines: how-to/redcap/security-guidelines.md
+      - Defending against fraudulent responses: how-to/redcap/fraudulent-responses.md
+      - Splitting a project: how-to/redcap/splitting-projects.md
+      - REB application language: how-to/redcap/reb-application.md
+      - MyCap mobile application: how-to/redcap/mycap.md
+      - nedCAPTCHA module: how-to/redcap/nedcaptcha.md
+  - Research guides:
+    - AI & machine learning:
+      - Overview & resources: research/ai-ml/overview.md
+      - GPU computing for AI/ML: research/ai-ml/gpu-computing.md
+      - LLM tools at ARC: research/ai-ml/llm-tools.md
+    - Bioinformatics:
+      - Overview & resources: research/bioinformatics/overview.md
+      - AlphaFold on Sockeye: research/bioinformatics/alphafold-on-sockeye.md
+  - Support:
+    - FAQ: support/faq.md
+    - Known issues & maintenance: support/known-issues.md
+    - Upcoming events: support/upcoming-events.md
+    - Grant support language: support/grant-language.md
+    - Acknowledging ARC: support/acknowledging-arc.md
+    - Contact: support/contact.md

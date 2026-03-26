@@ -1,33 +1,43 @@
 # UBC ARC Technical User Documentation
 
-Welcome to the technical documentation for **UBC Advanced Research Computing (ARC)**.
+Technical guides for **UBC Advanced Research Computing (ARC)** — HPC, object storage, data transfer, and research platforms.
 
-This site covers how to access and use ARC systems and services, including our HPC cluster, object storage, data transfer tools, and research platforms.
+<div class="grid cards" markdown>
+
+-   [**New to ARC? Start here**](getting-started/what-is-research-computing.md)
+
+    ---
+
+    First time here? Learn what ARC offers, request access, and run your first job on Sockeye.
+
+-   [**What we offer**](systems/sockeye.md)
+
+    ---
+
+    Overview of Sockeye, ARC OnDemand, Chinook, Globus, REDCap, and ARC Access.
+
+-   [**How-to guides**](how-to/running-jobs/slurm-basics.md)
+
+    ---
+
+    Running jobs, managing storage, transferring data, and using software on ARC systems.
+
+-   [**Research guides**](research/ai-ml/overview.md)
+
+    ---
+
+    Guides tailored for AI & machine learning and bioinformatics workflows on ARC.
+
+</div>
 
 ---
 
-## Our systems and services
+## Upcoming events
 
-| Resource | Description |
-|---|---|
-| [Sockeye](compute/sockeye.md) | UBC's on-premises HPC cluster |
-| [ARC OnDemand](compute/arc-ondemand.md) | Browser-based access to Sockeye |
-| [Chinook](storage/chinook.md) | ARC object storage |
-| [Globus](storage/globus.md) | Large-scale data transfer |
-| [REDCap](redcap/overview.md) | Secure research data platform |
-
----
-
-## Getting started
-
-New to ARC? Start here:
-
-1. [Request an allocation via ARC Access](getting-started/arc-access.md)
-2. [Connect to ARC systems](getting-started/connecting.md)
-3. [Run your first job on Sockeye](compute/running-jobs/slurm-basics.md)
+View scheduled maintenance windows and training sessions on the [upcoming events page](support/upcoming-events.md). [Subscribe to the ARC calendar](https://calendar.google.com/calendar/r?cid=e7b5d2ed451dde1bfb938911145e961dbd054e55ee3cf5a85461f185bd7675f1%40group.calendar.google.com) or [download the .ics file](https://calendar.google.com/calendar/ical/e7b5d2ed451dde1bfb938911145e961dbd054e55ee3cf5a85461f185bd7675f1%40group.calendar.google.com/public/basic.ics) to add it to Outlook or Apple Calendar.
 
 ---
 
 ## Need help?
 
-Contact us at [arc.support@ubc.ca](mailto:arc.support@ubc.ca) or check the [FAQ](help/faq.md).
+Check the [FAQ](support/faq.md) or contact us at [arc.support@ubc.ca](mailto:arc.support@ubc.ca). For urgent issues check [known issues & maintenance](support/known-issues.md).
