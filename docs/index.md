@@ -4,9 +4,9 @@ hide:
   - toc
 ---
 
-# UBC ARC Technical Documentation
+# Technical Documentation
 
-Collection of resources and guides for **UBC Advanced Research Computing (ARC)**.
+Collection of resources and guides for **Advanced Research Computing (ARC)**.
 
 ---
 
