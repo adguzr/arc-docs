@@ -51,8 +51,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - tags
-  - awesome-pages
 
 nav:
   - Home: index.md

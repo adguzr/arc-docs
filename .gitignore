@@ -7,3 +7,4 @@ site/
 
 # MkDocs build output
 site/
+.venv-zensical/
