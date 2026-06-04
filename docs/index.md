@@ -60,4 +60,4 @@ View current system status and upcoming maintenance on the [status & scheduled e
 
 ## Need help?
 
-Check the [FAQ](support/faq.md), browse the [glossary](support/glossary.md), or contact us at [arc.support@ubc.ca](mailto:arc.support@ubc.ca).
+Check the [FAQ](support/faq.md), browse the [glossary](support/glossary.md), or contact us at [support@ubc.ca](mailto:support@ubc.ca).
