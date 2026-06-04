@@ -12,7 +12,7 @@
 | REDCap | ✅ Operational | None |
 
 !!! info "Reporting an issue"
-    If you are experiencing a problem not listed here, contact us at [arc.support@ubc.ca](mailto:arc.support@ubc.ca) or submit a ticket via [UBC ARC ServiceNow](https://ubc.service-now.com).
+    If you are experiencing a problem not listed here, contact us at [arc.support@ubc.ca](mailto:arc.support@ubc.ca) or submit a ticket via [ARC Service Desk](https://ubc.service-now.com).
 
 ---
 
