@@ -1,1 +1,9 @@
 site/
+
+# Vim/editor swap files
+*.swp
+*.swo
+*.swn
+
+# MkDocs build output
+site/
