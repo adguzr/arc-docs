@@ -1,8 +1,0 @@
-title: REDCap
-nav:
-  - Access management & security guidelines: security-guidelines.md
-  - Defending against fraudulent responses: fraudulent-responses.md
-  - Splitting a project: splitting-projects.md
-  - REB application language: reb-application.md
-  - MyCap mobile application: mycap.md
-  - nedCAPTCHA module: nedcaptcha.md

@@ -1,8 +1,0 @@
-title: High-Performance Computing
-nav:
-  - What is HPC: what-is-hpc.md
-  - Cluster overview: cluster-overview.md
-  - Linux & command line basics: linux-basics.md
-  - Access: access/index.md
-  - Running jobs: running-jobs/index.md
-  - Software: software/index.md

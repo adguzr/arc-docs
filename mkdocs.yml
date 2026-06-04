@@ -53,3 +53,56 @@ plugins:
   - search
   - tags
   - awesome-pages
+
+nav:
+  - Home: index.md
+  - About ARC: about.md
+  - Resources:
+    - Sockeye: resources/sockeye.md
+    - Chinook: resources/chinook.md
+    - ARC OnDemand: resources/arc-ondemand.md
+    - ARC Access: resources/arc-access.md
+    - Globus: resources/globus.md
+    - REDCap: resources/redcap.md
+  - Guides:
+    - High-Performance Computing:
+      - What is HPC: guides/hpc/what-is-hpc.md
+      - Cluster overview: guides/hpc/cluster-overview.md
+      - Linux & command line basics: guides/hpc/linux-basics.md
+      - Access: guides/hpc/access/index.md
+      - Running jobs: guides/hpc/running-jobs/index.md
+      - Software: guides/hpc/software/index.md
+    - Storage:
+      - Chinook overview: guides/storage/chinook-overview.md
+      - Chinook setup guide: guides/storage/chinook-setup.md
+      - Chinook sharing guide: guides/storage/chinook-sharing.md
+      - Chinook user guide: guides/storage/chinook-user-guide.md
+      - Checking usage & quotas: guides/storage/checking-usage.md
+    - Data transfer:
+      - OnDemand file manager: guides/data-transfer/ondemand-file-manager.md
+      - Choosing a transfer method: guides/data-transfer/choosing-method.md
+      - Transferring data on the cluster: guides/data-transfer/transferring-on-cluster.md
+      - Data transfer with Globus: guides/data-transfer/globus-transfer.md
+      - Enable Globus subscription groups: guides/data-transfer/globus-subscription-groups.md
+      - Sharing data: guides/data-transfer/sharing-data.md
+      - Globus OneDrive connector: guides/data-transfer/globus-onedrive.md
+      - Common Globus help topics: guides/data-transfer/globus-help.md
+    - REDCap:
+      - Access management & security guidelines: guides/redcap/security-guidelines.md
+      - Defending against fraudulent responses: guides/redcap/fraudulent-responses.md
+      - Splitting a project: guides/redcap/splitting-projects.md
+      - REB application language: guides/redcap/reb-application.md
+      - MyCap mobile application: guides/redcap/mycap.md
+      - nedCAPTCHA module: guides/redcap/nedcaptcha.md
+    - Research workflows:
+      - LLM workloads on ARC: guides/research-workflows/llm-workloads.md
+  - Support:
+    - Status & scheduled events: support/status.md
+    - FAQ: support/faq.md
+    - Known issues: support/known-issues.md
+    - Training: support/training.md
+    - Glossary: support/glossary.md
+    - Grant support language: support/grant-language.md
+    - Acknowledging ARC: support/acknowledging-arc.md
+    - Contributing: contributing.md
+    - Contact: support/contact.md
